@@ -1,0 +1,2 @@
+# Tencentcloud_IPv6_DDNS
+腾讯云公网IPV6_DDNS域名解析脚本

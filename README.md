@@ -4,7 +4,7 @@
 以下测试环境为ubuntu22.04，环境默认安装python3.10
 
 
-【修改python文件中的secretid和key以及域名等相关信息，并上传到服务器】
+#修改python文件中的secretid和key以及域名等相关信息，并上传到服务器
 
 1.安装crontab：
 ```
@@ -39,7 +39,7 @@ crontab -l
 ```
 crontab -u root -l  
 ```
-# -u 后面是可以选择用户
+-u 后面是可以选择用户
 
 【crontab的注意事项】
 服务相关的命令

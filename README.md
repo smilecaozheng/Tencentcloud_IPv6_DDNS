@@ -44,10 +44,8 @@ crontab -u root -l
 【crontab的注意事项】
 服务相关的命令
 ```
-sudo systemctl restart cron
-service cron start //启动服务
-service cron stop //关闭服务
-service cron restart //重启服务
-service cron reload //重新载入配置
-service cron status	//服务状态
+sudo systemctl enable cron  # 开机自启服务
+sudo systemctl restart cron # 重启服务
+sudo systemctl start cron   # 开启服务
+sudo systemctl stop cron    # 停止服务
 ```

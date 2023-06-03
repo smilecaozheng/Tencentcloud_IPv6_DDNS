@@ -3,8 +3,15 @@
 
 以下测试环境为ubuntu22.04，环境默认安装python3.10
 
+申请域名相关请参考腾讯云https://cloud.tencent.com/
+申请完域名，要新建一个API密钥
+![image](https://github.com/smilecaozheng/Tencentcloud_IPv6_DDNS/assets/23375339/9f3a4a1a-7fb2-4281-a7be-b287dff5e2fb)
 
-# 修改python文件中的secretid和key以及域名等相关信息，并上传到服务器
+
+
+# 修改python文件中的secretid和key以及域名等相关信息，并上传到你的服务器
+![image](https://github.com/smilecaozheng/Tencentcloud_IPv6_DDNS/assets/23375339/ee502a50-afe7-471b-8b29-e4593ec4ac7c)
+
 
 1.安装crontab：
 ```

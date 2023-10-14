@@ -27,15 +27,35 @@ sudo systemctl enable cron
 chkconfig –level 35 cron on
 ```
 3.安装腾讯云API_SDK
+
+安装虚拟环境工具（如果你还没有安装的话）：
+```
+apt install python3-virtualenv
+```
+
+创建一个新的虚拟环境：
+```
+python -m venv myenv
+```
+这将创建一个名为myenv的虚拟环境。
+
+激活虚拟环境：
+```
+source myenv/bin/activate
+```
+安装腾讯云API_SDK
 ```
 pip install -i https://mirrors.tencent.com/pypi/simple/ --upgrade tencentcloud-sdk-python
 ```
-3.以root用户编辑定时任务
+3.以用户身份编辑定时任务
 ```
 crontab -e
 ```
+
 粘贴以下内容：路径选择上传源码路径
-*/10 * * * * python3 /home/klipper/DDNS_v3.py > /home/klipper/DDNS_v3.log
+```
+*/10 * * * * ~/myenv/bin/python3/home/klipper/DDNS_v3.py > /home/klipper/DDNS_v3.log
+```
 每10分钟运行 输出覆盖文件DDNS.log
 
 查看任务

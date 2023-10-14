@@ -12,6 +12,10 @@
 # 修改python文件中的secretid和key以及域名等相关信息，并上传到你的服务器
 ![image](https://github.com/smilecaozheng/Tencentcloud_IPv6_DDNS/assets/23375339/ee502a50-afe7-471b-8b29-e4593ec4ac7c)
 
+并在目录下创建DDNS_v3.log
+```
+touch DDNS_v3.log
+```
 
 1.安装crontab：
 ```
@@ -54,7 +58,7 @@ crontab -e
 
 粘贴以下内容：路径选择上传源码路径
 ```
-*/10 * * * * ~/myenv/bin/python3/home/klipper/DDNS_v3.py > /home/klipper/DDNS_v3.log
+*/10 * * * * ~/myenv/bin/python3 ~/DDNS_v3.py > ~/DDNS_v3.log
 ```
 每10分钟运行 输出覆盖文件DDNS.log
 

@@ -1,7 +1,7 @@
 # Tencentcloud_IPv6_DDNS
 自动更新本机ipv6 通过DNS 解析到公网域名
 
-以下测试环境为ubuntu22.04，环境默认安装python3.10
+以下测试环境为ubuntu23.04，环境默认安装python3.11
 
 申请域名相关请参考腾讯云https://cloud.tencent.com/
 申请完域名，要新建一个API密钥

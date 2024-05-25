@@ -14,6 +14,7 @@
 
 并在目录下创建DDNS_v3.log
 ```
+cd ~
 touch DDNS_v3.log
 ```
 
@@ -50,6 +51,10 @@ source myenv/bin/activate
 安装腾讯云API_SDK
 ```
 pip install -i https://mirrors.tencent.com/pypi/simple/ --upgrade tencentcloud-sdk-python
+```
+退出虚拟环境
+```
+deactivate
 ```
 3.以用户身份编辑定时任务
 ```

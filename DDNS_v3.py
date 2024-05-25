@@ -1,4 +1,5 @@
 import json
+import time
 import sys
 from tencentcloud.common import credential
 from tencentcloud.common.profile.client_profile import ClientProfile
@@ -24,7 +25,7 @@ def get_ip():
     try:
         IPv6 = str(request.urlopen("https://api6.ipify.org").read().decode('utf8'))
         if IPv6:
-            print("获取IPv6成功,",IPv6)
+            print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),"获取IPv6成功,",IPv6)
             return IPv6
         else:
             print("获取IPv6失败,请查询是否支持IPV6",)

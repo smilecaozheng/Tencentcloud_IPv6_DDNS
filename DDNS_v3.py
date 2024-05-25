@@ -28,13 +28,13 @@ def get_ip():
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),"获取IPv6成功,",IPv6)
             return IPv6
         else:
-            print("获取IPv6失败,请查询是否支持IPV6",)
+            print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,"获取IPv6失败,请查询是否支持IPV6",)
             sys.exit()
     except TimeoutError:
-        print("获取IPv6超时,请查询是否支持IPV6",)
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,"获取IPv6超时,请查询是否支持IPV6",)
         sys.exit()
     except error.URLError:
-        print("获取IPv6连接错误,请查询是否支持IPV6",)
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,"获取IPv6连接错误,请查询是否支持IPV6",)
         sys.exit()
         
 try:
